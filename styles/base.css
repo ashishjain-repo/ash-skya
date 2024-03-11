@@ -28,6 +28,9 @@
         background-color: black;
     }
 
+    main{
+        margin-top: 15%;
+    }
     main>.wedding-division-1 {
         display: grid;
         grid-template-columns: 1fr;
