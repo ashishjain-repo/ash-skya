@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image:url("/images/mesa-web.webp") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+    overflow-x: hidden;
+}
 
 @media only screen and (max-width: 480px) {
     header>nav>ul {
@@ -30,49 +38,49 @@
 
     main{
         margin-top: 15%;
-    }
-    main>.wedding-division-1 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, max-height);
+        grid-template-rows: repeat(3, 20vh);
         justify-items: center;
         align-items: center;
     }
 
-    main>.wedding-division-1>.wedding-temple {
-        grid-column: 1/2;
-        grid-row: 1/3;
+    .wedding-names > h1{
+        font-size: 3em;
+        color: white;
+        text-shadow: .05em .05em silver;
     }
 
-    .wedding-temple>img {
+    .wedding-message > h2{
+        font-size: 3em;
+        color: black;
+        text-shadow: .05em .05em silver;
+    }
+    .wedding-rsvp{
         width: 100%;
-        max-width: 100%;
         height: 100%;
-    }
-
-    main>.wedding-division-1>.wedding-names {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    main>.wedding-division-1>.wedding-message {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    main > .wedding-division-2{
-        width: 100%;
-        
-        border: 1px solid black;
-    }
-    .wedding-division-2 > .wedding-rsvp{
+        text-align: center;
+        background-color: rgba(128, 128, 128, 0.681);
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        justify-items: center;
+        justify-content: center;
         align-items: center;
-        height: 20vh;
     }
+    .wedding-rsvp p{
+        font-size: 2em;
+    }
+    .wedding-rsvp a{
+        text-decoration: none;
+        color: white;
+        border: 1px solid black;
+        text-align: center;
+        padding: 2% 5%;
+        background: #000;
+}
+.wedding-rsvp a:hover{
+color: black;
+background: white;
+}
+
     footer > section{
         position: fixed;
         bottom: 0;
